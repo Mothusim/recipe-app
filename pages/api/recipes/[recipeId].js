@@ -18,12 +18,13 @@ export default async function handler(req, res) {
     const { newDescription } = req.body;
 
     const recipeId = req.query.recipeId
+    let client;
     
     try {
 
-      const client = await connectDatabase();
+      client = await connectDatabase();
     
-      const res = await updateRecipe(client, 'recipes_edit', recipeId, newDescription)
+      const result = await updateRecipe(client, 'recipes_edit', recipeId, newDescription)
 
       res.status(200).json({ message: 'Description updated successfully' });
 
@@ -32,9 +33,9 @@ export default async function handler(req, res) {
       console.error(error);
       res.status(500).json({ message: 'Internal server error' });
 
-    } finally{
+    } finally {
 
-      await closeDatabase(client);
+      await closeDatabase(client)
 
     }
 

@@ -72,6 +72,8 @@ const Description = ({ recipe }) => {
       
     });
 
+    setIsEditing(false)
+
   };
 
   const handleChange = (event) => {

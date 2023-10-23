@@ -48,15 +48,6 @@ export async function connectDatabase() {
  * MongoDB server. It is responsible for establishing and maintaining the connection to the database
  * server.
  */
-
-
-/**
- * The closeDatabase function is used to close a MongoDB connection and logs the status of the
- * connection.
- * @param client - The `client` parameter is the MongoDB client object that is used to connect to the
- * MongoDB server. It is responsible for establishing and maintaining the connection to the database
- * server.
- */
 export async function closeDatabase(client) { 
 
   try {

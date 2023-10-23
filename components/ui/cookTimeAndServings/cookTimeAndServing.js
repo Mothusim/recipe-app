@@ -1,4 +1,4 @@
-import CookTime from "../cookTime/timeConversion"
+import CookTime from "../cookTime/cookingTime"
 import Servings from "../servings/servings"
 import classes from './cookTimeAndServing.module.css'
 

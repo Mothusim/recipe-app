@@ -1,6 +1,7 @@
 import Image from "next/image";
 import classes from './recipe-item.module.css'
 import Link from "next/link";
+import CookingTime from "./ui/cookTime/cookingTime";
 
 /**
  * The RecipeCard function takes in a recipe object as a prop and renders a card component with the
@@ -26,13 +27,15 @@ function RecipeCard({ recipe }) {
 
       <div className={classes.cardContent}>
           
-        <h5 className={classes.t}>{recipeTitle}</h5>
+        <h5 className={classes.title}>{recipeTitle}</h5>
 
         <p className={classes.cardDescription}>{description}...</p>
 
+        <CookingTime cookTimeInMinutes={recipe.cook} label='Total time' prepTimeInMinutes={recipe.prep} />
+
         <button className={classes.btn}>
 
-          <Link key={recipe._id} href={`/recipe/${recipe.title}`} >View Recipe</Link>
+          <Link key={recipe._id} href={`/recipe/${recipe.title}`} className={classes.link}>View Recipe</Link>
 
         </button>
 
