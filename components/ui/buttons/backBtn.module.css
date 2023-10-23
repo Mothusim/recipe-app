@@ -1,0 +1,16 @@
+.backBtn{
+
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+
+.backBtnIcon {
+
+    color: green;
+    font-size: 2em;
+    
+}

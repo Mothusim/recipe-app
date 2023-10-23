@@ -1,0 +1,71 @@
+
+.card {
+
+    color: black;
+    width: 20em;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+    margin: auto;
+
+    @media(min-width: 500px){
+
+        width: 22.5em;
+
+    }
+
+}
+
+
+
+.btn{
+
+    color: yellow
+}
+
+
+
+
+
+/* .title{
+
+    color: green;
+    font-weight: bolder;
+
+};
+
+ .card:hover {
+
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+
+};
+
+.cardContent {
+
+    padding: 2em;
+   
+};
+
+/* .btn{
+
+    border: solid 2px green;
+    background: transparent;
+    padding: 0.2rem 0.9rem;
+    margin: 0 0.2rem;
+    border-radius: 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    text-decoration: none;
+    text-decoration-line: none;
+
+}; */
+
+/* .cardDescription{
+
+    margin-top: 1em;
+};  */

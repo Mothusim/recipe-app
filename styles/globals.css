@@ -25,3 +25,30 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+body{
+
+  padding: 0 2em;
+
+  background: linear-gradient(-60deg, #92d8b0 15%, #d0b294 85%);
+  background-size: 200% 200%;
+  animation: ani_gradient 5s ease infinite;
+
+  @media(min-width: 500px){
+
+    padding: 0 5em;
+  }
+  
+}
+
+@keyframes ani_gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}

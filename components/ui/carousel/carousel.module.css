@@ -1,0 +1,16 @@
+/* .slider-container{
+
+    width: 200px
+} */
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.imageStyle{
+
+      margin-right: 20px
+}

@@ -1,0 +1,19 @@
+.servings{
+
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+.servingsIcon {
+
+    color: green;
+    font-size: 2em;
+
+    @media(min-width: 500px){
+
+        font-size: 3em;
+    }
+    
+}

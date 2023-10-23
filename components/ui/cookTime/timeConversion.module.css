@@ -1,0 +1,17 @@
+.time{
+
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.timeIcon {
+
+    color: green;
+    font-size: 2em;
+
+    @media(min-width: 500px){
+
+        font-size: 3em;
+    }
+}
